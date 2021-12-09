@@ -1,0 +1,57 @@
+{% extends "quiz/base.html" %}
+
+{% block title %}Create Poll{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Create Your Poll Here</h3>
+            </div>
+
+            <form method="POST">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="question">Enter Poll Question</label>
+                                <textarea name="question" id="question" class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="inputresponse1">First Response</label>
+                                <input type="text" name="inputresponse1" id="inputresponse1" class="form-control" placeholder=" " />
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="option2">Second Response</label>
+                                <input type="text" name="inputresponse2" id="inputresponse2" class="form-control" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="option3">Third Response</label>
+                                <input type="text" name="inputresponse3" id="inputresponse3" class="form-control" placeholder=" " />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <hr />
+                        <div class="col-lg-4">
+                            <button type="submit" class="btn btn-info">Submit Poll</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
