@@ -1,0 +1,33 @@
+body {
+    font-family: 'Tahoma', sans-serif;
+    margin: 3% 10%;
+    background-color: ghostwhite;
+}
+#header > h1 {
+    border: 3px solid gray;
+    color: white;
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.section {
+    font-size: 1.2em;
+    margin: 25px;
+    border: 1px solid silver;
+    padding: 25px;
+    background-color: lightseagreen;
+    color: #333333;
+}
+
+.navbar-default {
+    background-color: lightpink;
+    border-color: lightgray
+}
+
+.panel-default > .panel-heading {
+    color: black;
+    background-color: white;
+    border-color: lightpink;
+
+}
