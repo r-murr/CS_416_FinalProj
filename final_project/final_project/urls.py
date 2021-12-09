@@ -16,6 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from final_project import views as quiz_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', quiz_views.home, name='home'),
+    path('create/', quiz_views.create, name='create'),
+    path('results/', quiz_views.results, name='results'),
+    path('vote/', quiz_views.vote, name='vote'),
 ]
+
+
